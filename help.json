@@ -1,6 +1,8 @@
 {
   "/create-ledger": "create-ledger",
   "/index": "index",
+  "/inner-page-1": "inner-page-1",
+  "/inner-page-2": "inner-page-2",
   "/introduction": "introduction",
   "/manage-ledger": "manage-ledger",
   "/manage": "manage",

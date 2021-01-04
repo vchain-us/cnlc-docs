@@ -23,7 +23,7 @@ for filename in *.md; do
     
     f=$(echo "$filename" | cut -f 1 -d '.')
     echo "---"
-    echo $f
+    echo $f $i/$length
     echo "---"
 
     if [[ $i == $length ]]
