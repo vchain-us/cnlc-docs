@@ -39,7 +39,7 @@ export default {
 		},
 		prefix: {
 			type: String,
-			default: process.env.NODE_ENV !== 'production' ? '/help' : '/cnlc-docs-test/help',
+			default: process.env.NODE_ENV !== 'production' ? '/help' : '/help',
 		},
 	},
 };
