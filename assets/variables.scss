@@ -1,0 +1,35 @@
+@import '~@inkline/inkline/src/css/config';
+
+// COLORS
+$color-primary: #1565c0;
+$color-primary-light: lighten($color-primary, 15%);
+$color-secondary: #5e95f2;
+
+// BACKGROUND
+$body-background-light: #f5f5f5;
+$body-background-light-primary: #f9fcff;
+
+// TYPOGRAPHY
+$font-size-base: 1rem;
+
+// NAVBAR
+$navbar-padding-base: $spacer-1-2 0;
+
+// BUTTON
+$button-padding-base: $spacer-1-2 $spacer-1;
+$button-opacity-disabled-light: 0.33;
+
+// TABLE
+$table-cell-padding: $spacer-1-2 $spacer-1-2;
+
+// ICONS
+$icomoon-font-family: "cnlc" !default;
+$icomoon-font-path: "fonts" !default;
+
+// BORDER RADIUS
+$border-radius-base: $spacer-1-4;
+$border-radius: (
+	md: 6px
+);
+
+$icon-history: "\e900";

@@ -1,0 +1,40 @@
+.navbar.sub-navbar {
+	position: fixed !important;
+	z-index: 999;
+	width: 100%;
+	padding: 0 !important;
+	background: white !important;
+	border-bottom: 1px solid $border-color-light !important;
+	margin-left: -1rem;
+	margin-top: -1rem;
+	margin-right: -1rem;
+
+	.container {
+		padding-left: 0;
+	}
+
+	.autocomplete {
+		.autocomplete-input {
+			padding: 0.5rem 48px 0.5rem 1rem;
+			background-position: 95% center;
+			font-weight: 600;
+		}
+	}
+
+	.nav {
+		.item {
+			height: 58px;
+			display: inline-flex;
+			align-items: center;
+			transition: color 0.3s ease, border-color 0.3s ease;
+			border-bottom: 1px solid transparent;
+
+			&.-active,
+			&.nuxt-link-exact-active {
+				font-weight: normal !important;
+				color: $color-primary;
+				border-bottom-color: $color-primary;
+			}
+		}
+	}
+}

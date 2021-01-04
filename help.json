@@ -1,0 +1,13 @@
+{
+  "/create-ledger": "create-ledger",
+  "/index": "index",
+  "/introduction": "introduction",
+  "/manage-ledger": "manage-ledger",
+  "/manage": "manage",
+  "/messages": "messages",
+  "/overall-status": "overall-status",
+  "/query-ledger": "query-ledger",
+  "/use-audit-reports": "use-audit-reports",
+  "/use-ledger": "use-ledger",
+  "/user-management": "user-management"
+}
