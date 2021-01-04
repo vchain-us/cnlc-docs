@@ -28,6 +28,17 @@ export default {
     */
 	devtools: true,
 
+		/**
+     * Set up environment variables
+     * See https://nuxtjs.org/api/configuration-env
+     */
+	env: {
+		V_VERSION: process.env.V_VERSION || '2.1',
+		FE_VERSION: process.env.FE_VERSION || '0.0.0',
+		V_COMMIT: process.env.V_COMMIT || '0000000',
+		SYSTEM_LEDGER: process.env.SYSTEM_LEDGER || 'cnlc-internal-ledger',
+	},
+
 	/*
     ** Headers of the page
     ** See https://nuxtjs.org/api/configuration-head

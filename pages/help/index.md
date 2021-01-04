@@ -42,7 +42,7 @@ For additional assistance with any topic, please don't hesitate to contact us by
 
 ---------------------------------
 
-Copyright © 2020 CodeNotary, Inc. All rights reserved.
+Copyright © 2021 CodeNotary, Inc. All rights reserved.
 
 <v-img src="/alt_logo.png" alt="" > </v-img>
 
