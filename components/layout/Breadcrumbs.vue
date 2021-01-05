@@ -42,7 +42,9 @@ export default {
 	},
 	methods: {
 		isCurrentItem (data) {
-			return data && (data.path === this.$route.path || data.disabled);
+			const currentPath = this.$route && this.$route.path
+				? this.$route.path.replace(/\/$/, '') : '';
+			return data && (data.path === currentPath || data.disabled);
 		},
 		getClass (idx) {
 			if (idx === 0) {
