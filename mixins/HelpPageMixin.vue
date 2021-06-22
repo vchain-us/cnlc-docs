@@ -76,6 +76,12 @@ article.help-section {
 		}
 	}
 
+	.logo-wrapper {
+		span.text--logo {
+			left: 70px !important;
+		}
+	}
+
 	img {
 		display: block;
 		max-width: 100%;
