@@ -17,7 +17,7 @@ The left-hand navigation panel provides links to every top-level page in the UI.
 
 1. **Tampering Check**
 
-   The Ledger Compliance stack continually monitors entries for signatures of tampering - data or cryptographic inconsistencies.  While *tampering* may indicate the data was intentionally changed, it may also just signal a hardware or software fault.
+   The Immutable Ledger stack continually monitors entries for signatures of tampering - data or cryptographic inconsistencies.  While *tampering* may indicate the data was intentionally changed, it may also just signal a hardware or software fault.
 
    <v-img src="/alt_msg_notamper.png" alt="" > </v-img>
 

@@ -44,7 +44,7 @@ export default {
 
 	computed: {
 		getText () {
-			return `Ledger Compliance® v${ process.env.V_VERSION }`;
+			return `Immutable Ledger® v${ process.env.V_VERSION }`;
 		},
 		getAlt () {
 			return `CodeNotary ${ this.getText }`;

@@ -2,7 +2,7 @@
 title: Managing Ledgers
 ---
 
-This section describes how to manage an existing Ledger using the features offered by CodeNotary Ledger Compliance®.
+This section describes how to manage an existing Ledger using the features offered by CodeNotary Immutable Ledger®.
 
 _Topics on this page..._
 
@@ -89,7 +89,7 @@ While the SDK allows you to query Ledger values based on a (lookup) key, the *Qu
 #### Audit Report
 
 Audit report lets you generate a PDF report containing the status of the current Ledger and
-CodeNotary Ledger Compliance instance.
+CodeNotary Immutable Ledger instance.
 
 Report generation requires to select start and end time of interest for displaying the relevant reporting data.
 

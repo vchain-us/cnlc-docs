@@ -1,5 +1,5 @@
 ---
-title: Welcome to CodeNotary Ledger Compliance!
+title: Welcome to CodeNotary Immutable Ledger!
 index: true
 ---
 

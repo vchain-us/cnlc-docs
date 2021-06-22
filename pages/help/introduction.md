@@ -2,17 +2,17 @@
 title: Understanding the System
 ---
 
-If you're new to the CodeNotary Ledger Compliance platform, taking a moment to review the topics on this page will make it easier to understand other help content.
+If you're new to the CodeNotary Immutable Ledger platform, taking a moment to review the topics on this page will make it easier to understand other help content.
 
 ###### _Topics on this page..._
 
-- [What is CodeNotary Ledger Compliance?](/help/introduction#what-is-codenotary-ledger-compliance)
+- [What is CodeNotary Immutable Ledger?](/help/introduction#what-is-codenotary-ledger-compliance)
 - [What are some typical use cases?](/help/introduction#what-are-some-typical-use-cases)
 - [Major components](/help/introduction#major-components)
 
-## What is CodeNotary Ledger Compliance?
+## What is CodeNotary Immutable Ledger?
 
-CodeNotary Ledger Compliance (the 'CNLC Platform') is designed around the concept of immutability. That simply means that Ledger entries cannot be modified or deleted after they're posted.
+CodeNotary Immutable Ledger (the 'CNLC Platform') is designed around the concept of immutability. That simply means that Ledger entries cannot be modified or deleted after they're posted.
 
 Like Blockchain, CNLC Ledger entries are protected by both the architecture and encryption. Unlike Blockchain, CNLC doesn't require transactions to be extensively replicated across network nodes.
 
@@ -33,7 +33,7 @@ The CNLC platform provides additional security for key transactions in any busin
 
 ## Major Components
 
-Whether deployed on-premises or in the cloud, CodeNotary Ledger Compliance provides you a browser-based dashboard that can be used to manage the software:
+Whether deployed on-premises or in the cloud, CodeNotary Immutable Ledger provides you a browser-based dashboard that can be used to manage the software:
 
 - [Core platform](/help/introduction#core-platform)
 - [User Interface](/help/introduction#user-interface)
@@ -41,7 +41,7 @@ Whether deployed on-premises or in the cloud, CodeNotary Ledger Compliance provi
 
 ### Core platform
 
-The core CodeNotary Ledger Compliance platform manages Ledger data, security, and the API gateway access through our SDK.
+The core CodeNotary Immutable Ledger platform manages Ledger data, security, and the API gateway access through our SDK.
 
 Users interact with the platform in two ways: through a browser-based UI, and a programming interface provided by CodeNotary SDKs
 
@@ -49,7 +49,7 @@ The user interface provides for dashboard, administration and configuration func
 
 The programming interface provided by our SDKs lets you perform Ledger transactions with the core.
 
-Ledger Compliance uses an append-only data structure to store inserts and updates along the correct timestamp and data sequence. Powerful query capabilities allow for a fast data search and immediate inclusion proof.
+Immutable Ledger uses an append-only data structure to store inserts and updates along the correct timestamp and data sequence. Powerful query capabilities allow for a fast data search and immediate inclusion proof.
 
 ### User Interface
 
@@ -60,7 +60,7 @@ The user interface is a browser-based GUI. It's where you create and manage Ledg
 
 Your applications with through CodeNotary Ledgers through provided SDKs and plugins. You can post new entries as well as cryptographically verify and query data from Ledger.
 
-Each SDK and plugin has its own API key to be used to authenticate against Code Notary Ledger Compliance.
+Each SDK and plugin has its own API key to be used to authenticate against Code Notary Immutable Ledger.
 
 ##### SDK Language Support
 

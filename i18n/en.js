@@ -416,7 +416,7 @@ export default {
 		},
 		license: {
 			title: 'License',
-			description: 'For additional information on CodeNotary Ledger Compliance licensing and plans, go here.',
+			description: 'For additional information on CodeNotary Immutable Ledger licensing and plans, go here.',
 			inputPlaceholder: 'Paste license key here or select a license file below',
 			selectPlaceholder: 'Select license file',
 			addButton: 'Update license',
@@ -450,7 +450,7 @@ export default {
 					confirmText: 'Apply backup policy',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will reboot the CodeNotary Ledger Compliance appliance on the scheduled date!',
+						text: 'This will reboot the CodeNotary Immutable Ledger appliance on the scheduled date!',
 						textBold: 'Only the super-admin user "admin" can re-enable the ledger.',
 					},
 				},
@@ -473,7 +473,7 @@ export default {
 				title: 'Create an on-demand backup',
 				text: 'Backup the appliance immediatly',
 				button: 'Create an on-demand backup',
-				name: 'Codenotary Ledger Compliance',
+				name: 'Codenotary Immutable Ledger',
 				version: 'Version: {version}',
 				patch: 'Patch: {patch}',
 				modal: {
@@ -483,7 +483,7 @@ export default {
 					confirmText: 'Create',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will immediatly reboot the CodeNotary Ledger Compliance appliance!',
+						text: 'This will immediatly reboot the CodeNotary Immutable Ledger appliance!',
 						textBold: 'Only the super-admin user "admin" can re-enable the ledger.',
 					},
 				},
@@ -504,7 +504,7 @@ export default {
 					confirmText: 'Apply',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will reboot CodeNotary Ledger Compliance appliance!',
+						text: 'This will reboot CodeNotary Immutable Ledger appliance!',
 						textBold: 'Only the super-admin user "admin" can re-enable the ledger.',
 					},
 				},
@@ -550,7 +550,7 @@ export default {
 		},
 		appliance: {
 			title: 'Appliance information',
-			description: 'CodeNotary Ledger Compliance',
+			description: 'CodeNotary Immutable Ledger',
 			containerName: 'Container name',
 			version: 'Version',
 			buildTime: 'Build time',
@@ -610,7 +610,7 @@ export default {
 					confirmText: 'Apply patch',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will restart CodeNotary Ledger Compliance\'s services after completion!',
+						text: 'This will restart CodeNotary Immutable Ledger\'s services after completion!',
 					},
 				},
 				error: {
@@ -629,7 +629,7 @@ export default {
 					confirmText: 'Apply patch',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will restart CodeNotary Ledger Compliance\'s services after completion!',
+						text: 'This will restart CodeNotary Immutable Ledger\'s services after completion!',
 					},
 				},
 				warning: {
@@ -665,14 +665,14 @@ export default {
 					confirmText: 'Rollback last patch',
 					cancelText: 'Cancel',
 					warning: {
-						text: 'This will reboot the CodeNotary Ledger Compliance appliance!',
+						text: 'This will reboot the CodeNotary Immutable Ledger appliance!',
 						textBold: 'Only the super-admin user "admin" can re-enable the ledger.',
 					},
 				},
 				success: 'Patch rolled back succesfully!',
 			},
 			restarting: {
-				title: 'Ledger compliance is currently restarting following a patch apply.',
+				title: 'LImmutable Ledger is currently restarting following a patch apply.',
 				text: 'You\'ll be redirected to the \'sign in\' page automatically and this pop-up will be dismissed soon afterward.',
 				warning: 'Manually refreshing the page now could result in a 404 or 504 error page.',
 			},
