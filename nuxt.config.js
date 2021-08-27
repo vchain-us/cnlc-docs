@@ -2,53 +2,42 @@ import helpRoutes from './help';
 
 export default {
 	/*
-    ** Ssr propery
-    ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
-    */
+	** Ssr propery
+	** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
+	*/
 	ssr: false,
 
 	/*
-    ** Nuxt target
-    ** See https://nuxtjs.org/api/configuration-target
-    */
+	** Nuxt target
+	** See https://nuxtjs.org/api/configuration-target
+	*/
 	target: 'static',
 
 	/*
-    ** Server property
-    ** See https://nuxtjs.org/api/configuration-server
-    */
+	** Server property
+	** See https://nuxtjs.org/api/configuration-server
+	*/
 	server: {
 		host: '0.0.0.0',
 		port: 8081,
 	},
 
 	/*
-    ** Devtools enabled
-    ** See https://https://nuxtjs.org/api/configuration-srcdir
-    */
+	** Devtools enabled
+	** See https://https://nuxtjs.org/api/configuration-srcdir
+	*/
 	devtools: true,
 
-		/**
-     * Set up environment variables
-     * See https://nuxtjs.org/api/configuration-env
-     */
-	env: {
-		V_VERSION: process.env.V_VERSION || '2.2.1',
-		FE_VERSION: process.env.FE_VERSION || '0.0.0',
-		V_COMMIT: process.env.V_COMMIT || '0000000',
-		SYSTEM_LEDGER: process.env.SYSTEM_LEDGER || 'cnlc-internal-ledger',
-	},
-
 	/*
-    ** Headers of the page
-    ** See https://nuxtjs.org/api/configuration-head
-    */
+	** Headers of the page
+	** See https://nuxtjs.org/api/configuration-head
+	*/
 	head: {
-		title: 'CNLC Documentation',
+		title: process.env.npm_package_name || '',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'Codenotary Immutable Ledger Documentation' },
+			{ hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -56,16 +45,16 @@ export default {
 	},
 
 	/*
-    ** Global CSS
-    */
+	** Global CSS
+	*/
 	css: [
 		'~/assets/style.scss',
 	],
 
 	/*
-    ** Plugins to load before mounting the App
-    ** https://nuxtjs.org/guide/plugins
-    */
+	** Plugins to load before mounting the App
+	** https://nuxtjs.org/guide/plugins
+	*/
 	plugins: [
 		{ src: '~/plugins/axios' },
 		{ src: '~/plugins/vue-toasted', mode: 'client' },
@@ -73,14 +62,14 @@ export default {
 	],
 
 	/*
-    ** Auto import components
-    ** See https://nuxtjs.org/api/configuration-components
-    */
+	** Auto import components
+	** See https://nuxtjs.org/api/configuration-components
+	*/
 	components: true,
 
 	/*
-    ** Nuxt.js dev-modules
-    */
+	** Nuxt.js dev-modules
+	*/
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
 		'@nuxtjs/eslint-module',
@@ -90,8 +79,8 @@ export default {
 	],
 
 	/*
-    ** Nuxt.js modules
-    */
+	** Nuxt.js modules
+	*/
 	modules: [
 		'@nuxtjs/style-resources',
 		// Doc: https://axios.nuxtjs.org/
@@ -170,9 +159,9 @@ export default {
 	],
 
 	/**
-     * Set up internationalization
-     * Doc: https://nuxtjs.org/examples/i18n
-     */
+	 * Set up internationalization
+	 * Doc: https://nuxtjs.org/examples/i18n
+	 */
 	i18n: {
 		locales: [
 			{ code: 'en', iso: 'en-US', file: 'en.js' },
@@ -183,12 +172,20 @@ export default {
 	},
 
 	/**
-     * Set authenticated as default middleware
-     * Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-router
-     */
+	** Set up environment variables
+	** See https://nuxtjs.org/api/configuration-env
+	*/
+	env: {
+		V_VERSION: process.env.V_VERSION || '2.2.4',
+	},
+
+	/**
+	 * Set authenticated as default middleware
+	 * Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-router
+	 */
 	router: {
 		middleware: [],
-		base: process.env.NODE_ENV !== 'production' ? '/' : '/',
+		base: process.env.NODE_ENV !== 'production' ? '/' : '/cnlc-docs-test/',
 		scrollBehavior: async (to, from, savedPosition) => {
 			if (savedPosition) {
 				return savedPosition;
@@ -197,7 +194,7 @@ export default {
 			const findEl = async (hash, x = 0) => {
 				return (
 					document.querySelector(hash) ||
-					await new Promise((resolve) => {
+					new Promise((resolve) => {
 						if (x > 50) {
 							return resolve(document.querySelector('#app'));
 						}
@@ -239,15 +236,15 @@ export default {
 	},
 
 	/**
-     * Import variable overrides
-     */
+	 * Import variable overrides
+	 */
 	styleResources: {
 		scss: ['~/assets/variables.scss'],
 	},
 
 	/**
-     * Configure content module
-     */
+	 * Configure content module
+	 */
 	content: {
 		dir: 'pages',
 	},

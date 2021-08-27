@@ -14,7 +14,7 @@ The very first step in implementing a Ledger is to create it in the browser-base
 
 New Ledgers are created in the web UI from either the _Ledgers_ page or the _Home_ page by clicking the **+ Add Ledger** button.
 
-<v-img src="/alt_ledger_plain.png" alt="" ></v-img>
+<help-image src="/alt_ledger_plain.png" alt="" ></help-image>
 
 Creating a Ledger takes just a few steps - name your Ledger, add optional tags, and generate an API key.
 
@@ -22,7 +22,7 @@ Creating a Ledger takes just a few steps - name your Ledger, add optional tags, 
 
 2. Click the **+ Add Ledger** button. The *Define Ledger* panel opens.
 
-<v-img src="/alt_panell_defineledger.png" alt="" ></v-img>
+<help-image src="/alt_panell_defineledger.png" alt="" ></help-image>
 
 3. **Enter a unique Ledger name** in the *Ledger name* field.
    Your Ledger name appears in tabular views.  It must be globally unique, and can contain only alphanumeric characters as well as dash and underscore ('-','_').  Note that you have the option to change the Ledger name at any time.
@@ -37,7 +37,7 @@ Creating a Ledger takes just a few steps - name your Ledger, add optional tags, 
 
    *Click the **Previous step** button to return to the Define Ledger* panel.
 
-   <v-img src="/alt_panel_definekey_sm.png" alt="" ></v-img>
+   <help-image src="/alt_panel_definekey_sm.png" alt="" ></help-image>
 
 5. **Enter a unique name for the API Key** in the API Key name field. The key name must be globally unique, and can contain only alphanumeric characters as well as dash and underscore ('-','_').
 
@@ -71,7 +71,7 @@ All Ledger names and API key names must be unique across the entire system. Rena
 
 ##### License error
 
-<v-img src="/alt_err_lic.png" alt="" ></v-img>
+<help-image src="/alt_err_lic.png" alt="" ></help-image>
 
 CodeNotary offers a variety of licensing options.
 
@@ -83,4 +83,4 @@ CodeNotary offers a variety of licensing options.
 
 Please contact [sales@codenotary.com](mailto:sales@codenotary.com) for help finding the right license for your needs.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/overall-status', label: 'Home - System Status' }" :next="{ url: '/manage-ledger', label: 'Managing a Ledger' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/overall-status', label: 'Home - System Status' }" :next="{ url: '/manage-ledger', label: 'Managing a Ledger' }"></ui-prev-next>

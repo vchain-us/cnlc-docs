@@ -1,5 +1,12 @@
 <template>
-	<article class="help-section -github-markdown">
+	<article class="help-section">
+		<ThePageHeading :title="article.title" :icon="['fas', 'question-circle']" />
+
+		<TheHelpBreadcrumbs
+			v-if="showBreadcrumbs" :data="articles"
+			class="_margin-top-1"
+		/>
+
 		<i-card class="_margin-top-1">
 			<nuxt-content :document="article" />
 		</i-card>
@@ -7,36 +14,12 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import { VIEW_MODULE, SET_BREADCRUMBS, ADD_BREADCRUMBS } from '@/store/view/constants';
-
 export default {
-	mounted () {
-		if (this.article && this.article.title) {
-			this.setBreadcrumbs([
-				{
-					icon: ['fas', 'question-circle'],
-					title: this.$t('help.title'),
-					path: '/help',
-					disabled: this.article.index,
-				},
-			]);
-			if (!this.article.index) {
-				this.addBreadcrumbs([
-					{
-						icon: ['fas', 'question-circle'],
-						title: this.article.title,
-						path: `/help/${ this.article.slug }`,
-					},
-				]);
-			}
-		}
-	},
-	methods: {
-		...mapActions(VIEW_MODULE, {
-			setBreadcrumbs: SET_BREADCRUMBS,
-			addBreadcrumbs: ADD_BREADCRUMBS,
-		}),
+	name: 'HelpPageMixin',
+	computed: {
+		showBreadcrumbs() {
+			return this.$route.path !== '/help';
+		},
 	},
 };
 </script>
@@ -44,48 +27,40 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
-@import "~/assets/variables.scss";
 
 article.help-section {
+	padding-right: $spacer-4;
+	background: transparent;
+
 	.nuxt-content {
-		display: grid !important;
-		justify-self: flex-start;
-		padding-right: $spacer-4;
+		display: grid;
+		justify-self: start;
 
-		p {
-			margin: 0 16px;
-			padding: 0;
+		p.inline-img {
+			display: block;
 
-			&.inline-img {
-				display: block;
-
-				img {
-					display: inline;
-					margin: 0 $spacer-1-2 !important;
-					padding: 0 !important;
-				}
-
-				@include breakpoint-down(sm) {
-					display: inline;
-				}
+			img {
+				display: inline;
+				margin: 0 $spacer-1-2 !important;
+				padding: 0 !important;
 			}
-		}
 
-		@include breakpoint-down(sm) {
-			padding-right: 0 !important;
+			@include breakpoint-down(sm) {
+				display: inline;
+			}
 		}
 	}
 
-	.logo-wrapper {
-		span.text--logo {
-			left: 70px !important;
+	.help--logo {
+		img {
+			margin: 0 !important;
 		}
 	}
 
 	img {
-		display: block;
+		display:block;
 		max-width: 100%;
-		margin: $spacer-2 $spacer-1;
+		margin: $spacer-2 auto;
 		padding: 0;
 	}
 
@@ -105,8 +80,7 @@ article.help-section {
 		font-weight: bold;
 	}
 
-	td,
-	th {
+	td, th {
 		padding: 6px;
 		border: 1px solid #e6e6e6;
 		text-align: left;

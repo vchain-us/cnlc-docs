@@ -37,6 +37,9 @@ export default {
 			mini: SIDEBAR_MINI,
 			collapsed: SIDEBAR_COLLAPSED,
 		}),
+		permissions() {
+			return true;
+		},
 	},
 	methods: {
 		...mapActions(VIEW_MODULE, {
@@ -128,7 +131,7 @@ export default {
 		max-width: $spacer-4 !important;
 
 		.sidebar {
-			padding: $spacer-1 0;
+			padding: $spacer-1-2 0;
 
 			.item {
 				display: flex;

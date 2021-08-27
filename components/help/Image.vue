@@ -1,6 +1,7 @@
 <template>
 	<img
-		:src="imgSrc()" :alt="alt"
+		:src="imgSrc()"
+		:alt="alt"
 		:style="getStyle"
 	>
 </template>
@@ -16,6 +17,7 @@ export default {
 			type: String,
 			required: true,
 		},
+		/* eslint-disable vue/require-default-prop */
 		height: {
 			type: Number,
 		},
@@ -38,6 +40,7 @@ export default {
 			type: String,
 			default: 'contain',
 		},
+		/* eslint-enable vue/require-default-prop */
 	},
 	computed: {
 		getStyle () {
@@ -55,10 +58,10 @@ export default {
 	methods: {
 		imgSrc() {
 			try {
-				return require(`~/assets/images${ this.src }`);
+				return require(`~/assets/images/help${ this.src }`);
 			}
-			catch (error) {
-				console.log(error);
+			catch (err) {
+				console.error(err);
 				return null;
 			}
 		},

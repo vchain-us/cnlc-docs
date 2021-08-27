@@ -4,11 +4,8 @@
 		:collapse="false" :class="{ mini }"
 	>
 		<i-navbar-brand :to="localePath({ name: 'index' })">
-			<logo :size="mini ? 'normal' : 'small'" :icon="mini" />
+			<ui-logo :size="mini ? 'normal' : 'small'" :icon="mini" />
 		</i-navbar-brand>
-		<i-navbar-items class="_justify-content-space-between">
-			<breadcrumbs />
-		</i-navbar-items>
 		<i-hamburger-menu
 			class="_visible-md-and-down" :active="collapsed"
 			@click="onCollapse"
@@ -21,7 +18,11 @@ import { mapGetters, mapActions } from 'vuex';
 import { VIEW_MODULE, SET_SIDEBAR, SIDEBAR_COLLAPSED, SIDEBAR_MINI } from '~/store/view/constants';
 
 export default {
-	name: 'Navbar',
+	data: () => ({
+		user: {
+			username: 'Admin',
+		},
+	}),
 	computed: {
 		...mapGetters(VIEW_MODULE, {
 			collapsed: SIDEBAR_COLLAPSED,
@@ -56,14 +57,15 @@ export default {
 	z-index: 999;
 
 	.container {
-		min-height: 100%;
 		padding-left: 0;
+		min-height: 100%;
 	}
 
 	.brand {
-		display: flex;
-		width: 16.8rem;
 		padding: 0 0 0 1rem;
+		width: 16.8rem;
+		border-right: 1px solid $border-color-light;
+		display: flex;
 		align-items: center;
 	}
 

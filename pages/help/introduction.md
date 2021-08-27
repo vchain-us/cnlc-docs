@@ -2,19 +2,19 @@
 title: Understanding the System
 ---
 
-If you're new to the CodeNotary Immutable Ledger platform, taking a moment to review the topics on this page will make it easier to understand other help content.
+If you're new to the CodeNotary Cloud platform, taking a moment to review the topics on this page will make it easier to understand other help content.
 
 ###### _Topics on this page..._
 
-- [What is CodeNotary Immutable Ledger?](/help/introduction#what-is-codenotary-ledger-compliance)
+- [What is CodeNotary Cloud?](/help/introduction#what-is-codenotary-cloud)
 - [What are some typical use cases?](/help/introduction#what-are-some-typical-use-cases)
 - [Major components](/help/introduction#major-components)
 
-## What is CodeNotary Immutable Ledger?
+## What is CodeNotary Cloud?
 
-CodeNotary Immutable Ledger (the 'CNLC Platform') is designed around the concept of immutability. That simply means that Ledger entries cannot be modified or deleted after they're posted.
+CodeNotary Cloud (the 'CNIL Platform') is designed around the concept of immutability. That simply means that Ledger entries cannot be modified or deleted after they're posted.
 
-Like Blockchain, CNLC Ledger entries are protected by both the architecture and encryption. Unlike Blockchain, CNLC doesn't require transactions to be extensively replicated across network nodes.
+Like Blockchain, CNIL Ledger entries are protected by both the architecture and encryption. Unlike Blockchain, CNIL doesn't require transactions to be extensively replicated across network nodes.
 
 That means users get the benefits of a secure Ledger packaged in architecture that far outperforms the speed of Blockchain read and write transactions. These performance trade-offs often make sense in environments that require secure transaction logs, but don't necessarily require the resource-intensive complexity of full Blockchain implementations.
 
@@ -29,11 +29,11 @@ The application of secure Ledgers extends well beyond financial transactions. Bu
 * Digital objects identification (digital checksum)
 * Store log streams (i. e. access logs)
 
-The CNLC platform provides additional security for key transactions in any business while enabling compliance with data privacy and security regulations like PCI-DSS-10.
+The CNIL platform provides additional security for key transactions in any business while enabling compliance with data privacy and security regulations like PCI-DSS-10.
 
 ## Major Components
 
-Whether deployed on-premises or in the cloud, CodeNotary Immutable Ledger provides you a browser-based dashboard that can be used to manage the software:
+Whether deployed on-premises or in the cloud, CodeNotary Cloud provides you a browser-based dashboard that can be used to manage the software:
 
 - [Core platform](/help/introduction#core-platform)
 - [User Interface](/help/introduction#user-interface)
@@ -41,7 +41,7 @@ Whether deployed on-premises or in the cloud, CodeNotary Immutable Ledger provid
 
 ### Core platform
 
-The core CodeNotary Immutable Ledger platform manages Ledger data, security, and the API gateway access through our SDK.
+The core CodeNotary Cloud platform manages Ledger data, security, and the API gateway access through our SDK.
 
 Users interact with the platform in two ways: through a browser-based UI, and a programming interface provided by CodeNotary SDKs
 
@@ -49,18 +49,19 @@ The user interface provides for dashboard, administration and configuration func
 
 The programming interface provided by our SDKs lets you perform Ledger transactions with the core.
 
-Immutable Ledger uses an append-only data structure to store inserts and updates along the correct timestamp and data sequence. Powerful query capabilities allow for a fast data search and immediate inclusion proof.
+CodeNotary Cloud uses an append-only data structure to store inserts and updates along the correct timestamp and data sequence. Powerful query capabilities allow for a fast data search and immediate inclusion proof.
 
 ### User Interface
 
 The user interface is a browser-based GUI. It's where you create and manage Ledgers, create API keys, view statistics, run audit reports, and access various administrative functions.
-<v-img src="/alt_ledger_plain.png" alt="" > </v-img>
+
+<help-image src="/alt_ledger_plain.png" alt="" > </help-image>
 
 ### SDK
 
 Your applications with through CodeNotary Ledgers through provided SDKs and plugins. You can post new entries as well as cryptographically verify and query data from Ledger.
 
-Each SDK and plugin has its own API key to be used to authenticate against Code Notary Immutable Ledger.
+Each SDK and plugin has its own API key to be used to authenticate against CodeNotary Cloud.
 
 ##### SDK Language Support
 
@@ -81,8 +82,8 @@ The following integrations are available:
 
 - Ledgers provide secure, immutable storage appropriate sensitive or mission-critical data.
 
-- Ledgers are set up and configured on the CNLC web UI.
+- Ledgers are set up and configured on the CNIL web UI.
 
 - Transactions are written to the Ledger as key-value pairs, using the provided SDK.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/', label: 'About Help' }" :next="{ url: '/overall-status', label: 'Home - System Status' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/', label: 'About Help' }" :next="{ url: '/overall-status', label: 'Home - System Status' }"></ui-prev-next>

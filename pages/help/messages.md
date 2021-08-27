@@ -2,7 +2,7 @@
 title: Messages and Notifications
 ---
 
-The CNLC platform reports critical system events and display them on the *Messages* page in tabular format. Users can see separate lists to distinguish active messages from those that have already been read and acknowledged.
+The CNIL platform reports critical system events and display them on the *Messages* page in tabular format. Users can see separate lists to distinguish active messages from those that have already been read and acknowledged.
 
 ###### _Topics on this page..._
 
@@ -16,11 +16,11 @@ The CNLC platform reports critical system events and display them on the *Messag
 
 All new messages are displayed on the *Messages* page under the *Active messages* tab. When any new messages are waiting to be read, the UI alerts users in three different locations:
 
-1. <p class="inline-img"><strong>Alert Icon</strong><v-img src="/alt_bell_alert.png" alt=""><v-img/> The alert bell icon on the upper right of the status bar will display a flashing red dot above the bell.</p>
+1. <p class="inline-img"><strong>Alert Icon</strong><help-image src="/alt_bell_alert.png" alt=""><help-image/> The alert bell icon on the upper right of the status bar will display a flashing red dot above the bell.</p>
 
 2. **Home Page**  The messages panel on the [Home page](/help/overall-status) turns red and indicates the number of messages waiting.
 
-<v-img src="/alt_msg_notif.png" alt="" ></v-img>
+<help-image src="/alt_msg_notif.png" alt="" ></help-image>
 
 3. **[Ledger Management Page](/help/manage-ledger)**   For messages related to a particular Ledger, the messages panel on the management page for that Ledger red and indicates the number of messages waiting.
 
@@ -32,7 +32,7 @@ The *Messages* page consists of two tabs - *Active messages* and *Acknowledged m
 
 After a user acknowledges  a particular message, the system shifts it from the unread messages table and lists it under the Acknowledged messages tab.
 
-<v-img src="/alt_msg_main.png" alt="" ></v-img>
+<help-image src="/alt_msg_main.png" alt="" ></help-image>
 
 ##### Acknowledging a Message
 
@@ -56,4 +56,4 @@ The system categorizes messages into the following types.
 
 For additional help understanding messages, please don't hesitate to contact us by email support@codenotary.com or chat with a support representative at https://codenotary.com.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/user-management', label: 'User Management' }" :next="{ url: '/manage', label: 'Manage Appliance' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/user-management', label: 'User Management' }" :next="{ url: '/manage', label: 'Manage Appliance' }"></ui-prev-next>

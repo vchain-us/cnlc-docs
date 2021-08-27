@@ -13,13 +13,13 @@ The left-hand navigation panel provides links to every top-level page in the UI.
 
 ## Home Page Indicators
 
-<v-img src="/alt_hp_full_dash.png" alt="dashboard" ></v-img>
+<help-image src="/alt_hp_full_dash.png" alt="dashboard" ></help-image>
 
 1. **Tampering Check**
 
-   The Immutable Ledger stack continually monitors entries for signatures of tampering - data or cryptographic inconsistencies.  While *tampering* may indicate the data was intentionally changed, it may also just signal a hardware or software fault.
+   The CodeNotarty Cloud stack continually monitors entries for signatures of tampering - data or cryptographic inconsistencies.  While *tampering* may indicate the data was intentionally changed, it may also just signal a hardware or software fault.
 
-   <v-img src="/alt_msg_notamper.png" alt="" > </v-img>
+   <help-image src="/alt_msg_notamper.png" alt="" > </help-image>
 
    ###### Messages
 
@@ -42,19 +42,19 @@ The left-hand navigation panel provides links to every top-level page in the UI.
 
    Click the box icon to go to the *Ledgers overview* page.
 
-   <v-img src="/alt_ldgr_stat.png" alt="Ledger count"></v-img>
+   <help-image src="/alt_ldgr_stat.png" alt="Ledger count"></help-image>
 
 4. **+ Add Ledger**  Quick link to create a new Ledger.
 
-   <v-img src="/alt_Add_ledger_btn_sm.png" alt="" > </v-img>
+   <help-image src="/alt_Add_ledger_btn_sm.png" alt="" > </help-image>
 
 5. **Writes over time**  Indicates the total number of entries written to any Ledger in the last 6 hours.
 
-   <v-img src="/alt_wotb.png" alt="" > </v-img>
+   <help-image src="/alt_wotb.png" alt="" > </help-image>
 
 6. **Disk usage**  Displays a bar graph of the free and used storage space for both system and Ledger data. You can mouse-over the graphic for details.
 
-   <v-img src="/alt_disk_usage_e.png" alt="disk usage" ></v-img>
+   <help-image src="/alt_disk_usage_e.png" alt="disk usage" ></help-image>
 
 ## Navigation
 
@@ -91,8 +91,8 @@ System messages organized under tabs based on whether they have been read and ac
 These help pages.
 
 **Developer Section**
-Offers links to download SDKs and other interfaces to support access of the CNLC platform from your code.
+Offers links to download SDKs and other interfaces to support access of the CNIL platform from your code.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/introduction', label: 'Understanding the System' }" :next="{ url: '/create-ledger', label: 'Creating a Ledger' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/introduction', label: 'Understanding the System' }" :next="{ url: '/create-ledger', label: 'Creating a Ledger' }"></ui-prev-next>
 
 

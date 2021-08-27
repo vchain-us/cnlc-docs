@@ -14,7 +14,7 @@ The *Users* page lets administrators create new users, change parameters for exi
 
 To add a user to the system, you'll need their email address, desired user name, their role in the system and, optionally, their first and last name.
 
-<v-img src="/alt_usradmin_plain.png" alt="" ></v-img>
+<help-image src="/alt_usradmin_plain.png" alt="" ></help-image>
 
 ### Role-based Permissions
 
@@ -38,7 +38,8 @@ Note that some limitations to user administration are imposed by your assign rol
    - first name (optional)
 
    - last name (optional)
-     <v-img src="/alt_updprofile_dlog.png" alt="" ></v-img>
+
+	<help-image src="/alt_updprofile_dlog.png" alt="" ></help-image>
 
 4. Select a role from the User role drop down menu.
 5. Click the **Create user** button.
@@ -49,17 +50,17 @@ You can change any of these parameters after creating a user, provided you have 
 
 You can quickly change or delete a user's account from the options popup menu by clicking the gear icon in the users row.
 
-<v-img src="/alt_usradmin_menu.png" alt="" ></v-img>
+<help-image src="/alt_usradmin_menu.png" alt="" ></help-image>
 
 ##### User Management Options
 
-| Option              | Action                                                       |
+| Option			  | Action													   |
 | ------------------- | ------------------------------------------------------------ |
-| Change role         | Assign a new access role to a user.                          |
-| Change email        | Update user email.                                           |
-| Regenerate Password | Algorithmically generate a new password.                     |
-| Delete user         | Completely remove the user account from the system. This cannot be undone. |
+| Change role		 | Assign a new access role to a user.						  |
+| Change email		| Update user email.										   |
+| Regenerate Password | Algorithmically generate a new password.					 |
+| Delete user		 | Completely remove the user account from the system. This cannot be undone. |
 
 All options open a simple text form that lets you enter changes.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/use-audit-reports', label: 'Audit Reports' }" :next="{ url: '/messages', label: 'Messages and Notifications' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/use-audit-reports', label: 'Audit Reports' }" :next="{ url: '/messages', label: 'Messages and Notifications' }"></ui-prev-next>

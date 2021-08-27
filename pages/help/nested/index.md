@@ -2,7 +2,7 @@
 title: Nested Main Page
 ---
 
-<v-img src="/image.png" alt="Help Image"></v-img>
+<help-image src="/image.png" alt="Help Image"></help-image>
 
 # Nested Main Page
 
@@ -13,7 +13,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ~~~js
 export default {
-    name: 'Hello CNLC!'
+	name: 'Hello CNIL!'
 }
 ~~~
 

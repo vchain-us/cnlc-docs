@@ -18,7 +18,6 @@
 
 <script>
 export default {
-	name: 'PageHeading',
 	props: {
 		title: {
 			type: String,

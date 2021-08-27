@@ -2,7 +2,7 @@
 title: Managing Ledgers
 ---
 
-This section describes how to manage an existing Ledger using the features offered by CodeNotary Immutable Ledger®.
+This section describes how to manage an existing Ledger using the features offered by CodeNotary Cloud®.
 
 _Topics on this page..._
 
@@ -15,7 +15,7 @@ The *Ledgers* page displays a searchable (by name), paginated table of all Ledge
 
 The top-level *Ledgers* page lists all the Ledgers currently defined in the system, along with usage information.
 
-<v-img src="/alt_ledger_annot.png" alt="disk usage" ></v-img>
+<help-image src="/alt_ledger_annot.png" alt="disk usage" ></help-image>
 
 By clicking the **Actions** icon, privileged users can enable/disable a Ledger. When a Ledger is disabled, SDK users cannot post transactions to it.
 
@@ -27,7 +27,7 @@ When you click a Ledger from the Ledgers page, the Ledger Dashboard opens.
 
 Like the [Home page](/help/overall-status), the Ledger Dashboard displays status, messages and selected KPIs. But instead of system-wide information, it displays only that specific to the selected Ledger.
 
-<v-img src="/alt_ledger_dash.png" alt="disk usage" ></v-img>
+<help-image src="/alt_ledger_dash.png" alt="disk usage" ></help-image>
 
 Other Ledger statistics are shown on the page, such as the number of Ledger entries, Ledger size on disk, last data insertion time and the number of active data sources.
 
@@ -44,13 +44,13 @@ Ledger management functions are accessed from the tabs along the top of the page
 
 After a Ledger is created, you can change its name, enable/disable it, generate new API keys or delete keys no longer in use. To access management tools, select the appropriate tab at the top of the page.
 
-| Function                                                  | Tab               |                                                          |
+| Function												  | Tab			   |														  |
 | --------------------------------------------------------- | ----------------- | -------------------------------------------------------- |
-| [Managing API Keys](/help/manage-ledger#managing-API-keys) | *API Keys*        | View existing API keys for the selected Ledger.          |
-| [Querying a Ledger](/help/manage-ledger#querying-a-ledger) | *Query Ledger*    | Query and transactions in the selected Ledger.           |
-| [Audit Report](/help/manage-ledger#audit-report)           | *Audit Report*    | Create an audit report of events for the current Ledger. |
-| [Renaming a Ledger](/help/manage-ledger#renaming-a-ledger) | *Ledger Settings* | Change the Ledger name as it appears in the UI.          |
-| [Exporting a Ledger](/help/manage-ledger#export-ledger)    | *Export*          | Export Ledger data to a JSON file.                       |
+| [Managing API Keys](/help/manage-ledger#managing-API-keys) | *API Keys*		| View existing API keys for the selected Ledger.		  |
+| [Querying a Ledger](/help/manage-ledger#querying-a-ledger) | *Query Ledger*	| Query and transactions in the selected Ledger.		   |
+| [Audit Report](/help/manage-ledger#audit-report)		   | *Audit Report*	| Create an audit report of events for the current Ledger. |
+| [Renaming a Ledger](/help/manage-ledger#renaming-a-ledger) | *Ledger Settings* | Change the Ledger name as it appears in the UI.		  |
+| [Exporting a Ledger](/help/manage-ledger#export-ledger)	| *Export*		  | Export Ledger data to a JSON file.					   |
 
 #### Managing API Keys
 
@@ -68,32 +68,38 @@ To create a new API key by clicking on "Create API Key" and providing an API Key
 
 After creating your API key, you can copy it or download to a file on your local system.
 
-<v-img src="/alt_apikey_gen.png" alt="" ></v-img>
+<help-image src="/alt_apikey_gen.png" alt="" ></help-image>
 
 To copy the API Key string to the clipboard, click the copy icon to the right of the key.
 
-To download the key as a file, click the **Download API Key** button.
+Once a key is created, if you need to reset it, you can use the Rotate key function.
 
 ---
 
-**NOTE** *API key value can be recovered later using the "Retrieve API Key" action in the list of a Ledger API keys.*
+**NOTE** Once a key is created, if you need to reset it, you can use the Rotate key function.
+
+If you suspect a key is compromised, you can also use the "Revoke key" option to disable it from being used. Assets notarized with a revoked key will be not shown as trusted.
 
 ---
+
+#### Automating API key management
+
+You can automate management of keys by using the API and a Personal Token (link to personal tokens)
 
 #### Querying a Ledger
 
 While the SDK allows you to query Ledger values based on a (lookup) key, the *Query Ledger* tab lets you query Ledger contents directly through the UI. The query process is is discussed in more detail on the [*Query Ledger Data page*](/help/query-ledger) .
 
-<v-img src="/alt_query_ldgr_wgt_annot.png" alt="" ></v-img>
+<help-image src="/alt_query_ldgr_wgt_annot.png" alt="" ></help-image>
 
 #### Audit Report
 
 Audit report lets you generate a PDF report containing the status of the current Ledger and
-CodeNotary Immutable Ledger instance.
+CodeNotary Cloud Ledger instance.
 
 Report generation requires to select start and end time of interest for displaying the relevant reporting data.
 
-<v-img src="/alt_aud_rept_main.png" alt="" ></v-img>
+<help-image src="/alt_aud_rept_main.png" alt="" ></help-image>
 
 ##### Running Audit Reports
 
@@ -109,7 +115,7 @@ For more about Audit reports and what they contain, see the [*Using Audit Report
 
 The *Ledger Settings* tab lets you rename an existing Ledger.
 
-<v-img src="/alt_ldgr_set_dlg.png" alt="" ></v-img>
+<help-image src="/alt_ldgr_set_dlg.png" alt="" ></help-image>
 
 Enter the new name in the text box then click the **Update Ledger** button.
 
@@ -121,11 +127,11 @@ The Export Ledger function lets you download Ledger data as a JSON file.
 
 After clicking the *Export* tab from the Ledger Dashboard, a list view appears, showing previous exports for the current Ledger and the timeframe each represents.
 
-<v-img src="/alt_ldgr_export_main.png" alt="" ></v-img>
+<help-image src="/alt_ldgr_export_main.png" alt="" ></help-image>
 
 ##### Download an Existing Export
 
-<p class="inline-img">You can download any previously exported file again by clicking the download icon <v-img src="/alt_dnload_icn.png" alt=""></v-img> in the <i>Actions</i> column on the far right.</p>
+<p class="inline-img">You can download any previously exported file again by clicking the download icon <help-image src="/alt_dnload_icn.png" alt=""></help-image> in the <i>Actions</i> column on the far right.</p>
 
 ##### Create a New Export
 
@@ -135,4 +141,4 @@ A new entry is created at the top of the list. The *Status* column indicates whe
 
 Note that larger files will take longer to create.
 
-<prev-next class="_margin-top-1" :prev="{ url: '/create-ledger', label: 'Creating a Ledger' }" :next="{ url: '/use-ledger', label: 'Using the SDK' }"></prev-next>
+<ui-prev-next class="mt-1" :prev="{ url: '/create-ledger', label: 'Creating a Ledger' }" :next="{ url: '/use-ledger', label: 'Using the SDK' }"></ui-prev-next>

@@ -1,6 +1,6 @@
 <template>
 	<i-layout id="default-layout">
-		<Banner
+		<TheBanner
 			v-if="banner && banner.show"
 			:title="banner && banner.title"
 			:subtitle="banner && banner.subtitle"
@@ -9,10 +9,10 @@
 			id="layout-header" class="_padding-0"
 			:class="{ 'with-banner': banner.show }"
 		>
-			<navbar />
+			<TheNavbar />
 		</i-layout-header>
 		<i-layout vertical>
-			<sidebar :class="{ 'with-banner': banner.show }" />
+			<TheSidebar :class="{ 'with-banner': banner.show }" />
 			<i-layout-content id="layout-content" :class="{ mini, collapsed, 'with-banner': banner.show }">
 				<i-container fluid>
 					<i-row>
@@ -28,24 +28,18 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import {
-	VIEW_MODULE,
-	SIDEBAR_COLLAPSED,
-	SIDEBAR_MINI,
-	BANNER,
-} from '@/store/view/constants';
+import { VIEW_MODULE, SIDEBAR_COLLAPSED, SIDEBAR_MINI, BANNER, PATCH_RESTARTING } from '@/store/view/constants';
 import LayoutMixin from '@/mixins/LayoutMixin';
 
 export default {
 	name: 'DefaultLayout',
-	mixins: [
-		LayoutMixin,
-	],
+	mixins: [LayoutMixin],
 	computed: {
 		...mapGetters(VIEW_MODULE, {
 			collapsed: SIDEBAR_COLLAPSED,
 			mini: SIDEBAR_MINI,
 			banner: BANNER,
+			patchRestarting: PATCH_RESTARTING,
 		}),
 	},
 };
@@ -84,7 +78,7 @@ body,
 	}
 
 	#layout-content {
-		padding-top: $spacer-4;
+		padding-top: calc(#{$spacer-4} + #{$spacer});
 		padding-bottom: $spacer;
 		background: $body-background-light;
 
@@ -93,7 +87,7 @@ body,
 		}
 
 		&.with-banner {
-			padding-top: $spacer-7;
+			padding-top: calc(#{$spacer-7} + #{$spacer});
 		}
 
 		&.mini:not(.collapsed) {

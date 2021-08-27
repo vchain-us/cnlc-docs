@@ -20,22 +20,22 @@ echo "{" >> $HELP_FILE
 
 i=1
 for filename in *.md; do
-    # if filename path is valid
-    [ -e "$filename" ] || continue
-    
-    f=$(echo "$filename" | cut -f 1 -d '.')
-    echo "---"
-    echo $f
+	# if filename path is valid
+	[ -e "$filename" ] || continue
+	
+	f=$(echo "$filename" | cut -f 1 -d '.')
+	echo "---"
+	echo $f
 
 
-    if [[ $i == $length ]]
-    then
-        echo "  \"/$f\": \"$f\"" >> $HELP_FILE
-        break
-    else 
-        echo "  \"/$f\": \"$f\"," >> $HELP_FILE
-    fi 
-    ((i=i+1))
+	if [[ $i == $length ]]
+	then
+		echo "  \"/$f\": \"$f\"" >> $HELP_FILE
+		break
+	else 
+		echo "  \"/$f\": \"$f\"," >> $HELP_FILE
+	fi 
+	((i=i+1))
 done
 
 # append json end character
