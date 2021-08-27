@@ -185,7 +185,7 @@ export default {
 	 */
 	router: {
 		middleware: [],
-		base: process.env.NODE_ENV !== 'production' ? '/' : '/cnlc-docs-test/',
+		base: process.env.NODE_ENV !== 'production' ? '/' : '/cnlc-docs/',
 		scrollBehavior: async (to, from, savedPosition) => {
 			if (savedPosition) {
 				return savedPosition;
