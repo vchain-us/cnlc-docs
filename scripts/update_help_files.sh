@@ -12,6 +12,8 @@ HELP_FILE='../../help.json'
 
 # get number of filenames matching regex
 length=`find "." -type f -name "*.md" | wc -l`
+length=$((length - 3))
+echo $length
 
 # append json start character
 echo "{" >> $HELP_FILE
@@ -23,8 +25,8 @@ for filename in *.md; do
     
     f=$(echo "$filename" | cut -f 1 -d '.')
     echo "---"
-    echo $f $i/$length
-    echo "---"
+    echo $f
+
 
     if [[ $i == $length ]]
     then
