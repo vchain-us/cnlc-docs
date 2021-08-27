@@ -3,15 +3,15 @@ name: Build
 on: pull_request
 
 jobs:
-	build:
-		runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-		steps:
-			- uses: actions/checkout@v1
+        steps:
+            - uses: actions/checkout@v1
 
-			- name: Build
-			  run: |
-				  npm install
-				  npm run scripts
-				  npm run build
-				  npm run generate
+            - name: Build
+              run: |
+                  npm install
+                  npm run scripts
+                  npm run build
+                  npm run generate
