@@ -11,7 +11,7 @@ _Topics on this page..._
 
 This is an introduction to using the SDK. The .zip package for each SDK contains a readme.md file with specific instructions for install and using it.
 
-As part of creating a Ledger in the CNIL UI, you'll create an API key that you can use with the SDK to manage query transactions.
+As part of creating a Ledger in the Codenotary Cloud UI, you'll create a Signer ID that you can use with the SDK to manage query transactions.
 
 ## What can you do with the SDK?
 
@@ -42,7 +42,7 @@ Subfolders include examples, libraries, and a readme.md file that provides instr
 
 The first step is to instantiate a LC client. You only need one
 
-- API Key (created in the UI)
+- Signer ID (created in the UI)
 
 - Server IP address
 
@@ -59,7 +59,7 @@ Go to the developers page and download the zip file that matches your preferred 
 Unzip the file to your development environment.
 
 **3.  Instantiate the client**
-Initialize and connect to your CNIL platform instance. Here's where you use the API key generated from the Ledger your client is connecting to.
+Initialize and connect to your Codenotary Cloud platform instance. Here's where you use the Signer ID generated from the Ledger your client is connecting to.
 
 **4.  Use client methods within your code to read and write transactions**
 Available methods are provided by the client object you initialize in step 3.
@@ -70,7 +70,7 @@ To access the SDK, click the the Developers icon on the left-hand navigation pan
 
 Click **Download SDKs**.
 
-<help-image src="/alt_devsdk_sm.png" alt="" ></help-image>
+<help-image src="/alt_developer_section.jpg" alt="Developer section" ></help-image>
 
 Select the SDK that matches your development language.
 

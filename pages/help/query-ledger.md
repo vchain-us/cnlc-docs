@@ -2,7 +2,7 @@
 title: Querying a Ledger
 ---
 
-From the *Query Ledger* page you can search and filter Ledger entries based on a search string, an API key, and a time frame.
+From the *Query Ledger* page you can search and filter Ledger entries based on a search string, a Signer ID, and a time frame.
 
 ###### _Topics on this page..._
 
@@ -16,32 +16,33 @@ From the *Query Ledger* page you can search and filter Ledger entries based on a
 
 There are three tabs on the *Query Ledger* page. The default tab is *Query*, where the search form is. The *Recent Queries* shows all the most recent queries run by any user. You can optionally save queries. Those are displayed under the *Saved Queries* tab.
 
-<help-image src="/alt_query_ldgr_main.png" alt="" ></help-image>
+<help-image src="/alt_query_recent.jpg" alt="Recent queries" ></help-image>
 
 ## Running a Query
 
 Run queries from the *Query* tab on the *Query Ledgers* page. The form at the top of the page lets you select filter parameters, run the query, and save parameters for later reuse.
 
-<help-image src="/alt_query_ldgr_wgt_annot.png" alt="" ></help-image>
+<help-image src="/alt_query_described.jpg" alt="Running a query" ></help-image>
 
 #### To Run a Query
 
 1. Select the Ledger from the Ledger dropdown.
 
-2. Select the API key from the dropdown. (the blue icon indicates the type, SDK, CI/CD, Postgres)
+2. Select the Signer ID from the dropdown. (the blue icon indicates the type, SDK, CI/CD, Postgres)
 
-3. Enter a hash in the dedicated field. This is the look-up key for a given k-v pair Ledger entry.
+3. Optionally enter a hash in the dedicated field. This is the look-up key for a given k-v pair Ledger entry.
 
-4. Enter the timeframe by clicking the calendar icon, then selecting *relative* or *absolute* time range, and entering the desired dates or durations.
+4. In case the Signer ID is of type 'CI/CD' optionally insert an asset name.
 
-5. Select the (maximum) number of rows the query should return.
+5. In case the Signer ID is of type 'CI/CD' optionally insert an entry type (all, witch attachments or without attachments).
 
-6. From this same dialog you can also toggle whether the query should return entries tagged as tampered or not tampered. Click the **Apply** button.
+6. Enter the timeframe by clicking the calendar icon, then selecting *relative* or *absolute* time range, and entering the desired dates or durations.
 
-   <help-image src="/alt_query_entryfilt_dlg.png" alt="" ></help-image>
+7. From this dialog on the right toggle whether the query should return entries tagged as tampered or not tampered. Click the **Apply** button.
 
-7.
-   Click the **Filter** button to run the query.
+<help-image src="/alt_query_options.jpg" alt="Query options" ></help-image>
+
+7. Click the **Search** button to run the query.
 
 ## Query Results Tools
 

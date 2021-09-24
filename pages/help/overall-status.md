@@ -13,13 +13,13 @@ The left-hand navigation panel provides links to every top-level page in the UI.
 
 ## Home Page Indicators
 
-<help-image src="/alt_hp_full_dash.png" alt="dashboard" ></help-image>
+<help-image src="/alt_dashboard.jpg" alt="Dashboard" ></help-image>
 
 1. **Tampering Check**
 
    The CodeNotarty Cloud stack continually monitors entries for signatures of tampering - data or cryptographic inconsistencies.  While *tampering* may indicate the data was intentionally changed, it may also just signal a hardware or software fault.
 
-   <help-image src="/alt_msg_notamper.png" alt="" > </help-image>
+   <help-image src="/alt_not_tampered.jpg" alt="Not tampered info" > </help-image>
 
    ###### Messages
 
@@ -42,19 +42,19 @@ The left-hand navigation panel provides links to every top-level page in the UI.
 
    Click the box icon to go to the *Ledgers overview* page.
 
-   <help-image src="/alt_ldgr_stat.png" alt="Ledger count"></help-image>
+   <help-image src="/alt_ledger_count.jpg" alt="Ledger count"></help-image>
 
 4. **+ Add Ledger**  Quick link to create a new Ledger.
 
-   <help-image src="/alt_Add_ledger_btn_sm.png" alt="" > </help-image>
+   <help-image src="/alt_ledger_add.jpg" alt="Add ledger" > </help-image>
 
 5. **Writes over time**  Indicates the total number of entries written to any Ledger in the last 6 hours.
 
-   <help-image src="/alt_wotb.png" alt="" > </help-image>
+   <help-image src="/alt_ledger_writes_over_time.jpg" alt="Writes over time" > </help-image>
 
 6. **Disk usage**  Displays a bar graph of the free and used storage space for both system and Ledger data. You can mouse-over the graphic for details.
 
-   <help-image src="/alt_disk_usage_e.png" alt="disk usage" ></help-image>
+   <help-image src="/alt_ledger_disk_usage.jpg" alt="Disk usage" ></help-image>
 
 ## Navigation
 
@@ -70,7 +70,7 @@ The top-level pages and subpages are organized as follows:
 The default page. Displays system status indicators, warnings, and pending message notification.
 
 **Ledgers**
-A tabular view of all Ledgers configured in the system. Lets you add a new Ledger, search Ledgers by name, and select individual Ledgers to see stats , generate new API keys, or perform various functions.
+A tabular view of all Ledgers configured in the system. Lets you add a new Ledger, search Ledgers by name, and select individual Ledgers to see stats , generate new Signer IDs, or perform various functions.
 
 **Query Ledger**
 A tabular view of previous queries along with a filtering tool to create new queries.
@@ -91,7 +91,7 @@ System messages organized under tabs based on whether they have been read and ac
 These help pages.
 
 **Developer Section**
-Offers links to download SDKs and other interfaces to support access of the CNIL platform from your code.
+Offers links to download SDKs and other interfaces to support access of the Codenotary Cloud platform from your code.
 
 <ui-prev-next class="mt-1" :prev="{ url: '/introduction', label: 'Understanding the System' }" :next="{ url: '/create-ledger', label: 'Creating a Ledger' }"></ui-prev-next>
 

@@ -2,7 +2,7 @@
 title: Managing Ledgers
 ---
 
-This section describes how to manage an existing Ledger using the features offered by CodeNotary Cloud®.
+This section describes how to manage an existing Ledger using the features offered by Codenotary Cloud®.
 
 _Topics on this page..._
 
@@ -15,7 +15,7 @@ The *Ledgers* page displays a searchable (by name), paginated table of all Ledge
 
 The top-level *Ledgers* page lists all the Ledgers currently defined in the system, along with usage information.
 
-<help-image src="/alt_ledger_annot.png" alt="disk usage" ></help-image>
+<help-image src="/alt_ledger_list_described.jpg" alt="Ledger list explained" ></help-image>
 
 By clicking the **Actions** icon, privileged users can enable/disable a Ledger. When a Ledger is disabled, SDK users cannot post transactions to it.
 
@@ -27,7 +27,7 @@ When you click a Ledger from the Ledgers page, the Ledger Dashboard opens.
 
 Like the [Home page](/help/overall-status), the Ledger Dashboard displays status, messages and selected KPIs. But instead of system-wide information, it displays only that specific to the selected Ledger.
 
-<help-image src="/alt_ledger_dash.png" alt="disk usage" ></help-image>
+<help-image src="/alt_ledger_detail_dashboard.jpg" alt="Ledger detail dashboard" ></help-image>
 
 Other Ledger statistics are shown on the page, such as the number of Ledger entries, Ledger size on disk, last data insertion time and the number of active data sources.
 
@@ -42,35 +42,35 @@ Ledger management functions are accessed from the tabs along the top of the page
 
 ## Ledger Management Features
 
-After a Ledger is created, you can change its name, enable/disable it, generate new API keys or delete keys no longer in use. To access management tools, select the appropriate tab at the top of the page.
+After a Ledger is created, you can change its name, enable/disable it, generate new Signer IDs or delete keys no longer in use. To access management tools, select the appropriate tab at the top of the page.
 
-| Function												  | Tab			   |														  |
+| Function                                                  | Tab               |                                                          |
 | --------------------------------------------------------- | ----------------- | -------------------------------------------------------- |
-| [Managing API Keys](/help/manage-ledger#managing-API-keys) | *API Keys*		| View existing API keys for the selected Ledger.		  |
-| [Querying a Ledger](/help/manage-ledger#querying-a-ledger) | *Query Ledger*	| Query and transactions in the selected Ledger.		   |
-| [Audit Report](/help/manage-ledger#audit-report)		   | *Audit Report*	| Create an audit report of events for the current Ledger. |
-| [Renaming a Ledger](/help/manage-ledger#renaming-a-ledger) | *Ledger Settings* | Change the Ledger name as it appears in the UI.		  |
-| [Exporting a Ledger](/help/manage-ledger#export-ledger)	| *Export*		  | Export Ledger data to a JSON file.					   |
+| [Managing Signer IDs](/help/manage-ledger#managing-API-keys) | *Signer IDs*        | View existing Signer IDs for the selected Ledger.          |
+| [Querying a Ledger](/help/manage-ledger#querying-a-ledger) | *Query Ledger*    | Query and transactions in the selected Ledger.           |
+| [Audit Report](/help/manage-ledger#audit-report)           | *Audit Report*    | Create an audit report of events for the current Ledger. |
+| [Renaming a Ledger](/help/manage-ledger#renaming-a-ledger) | *Ledger Settings* | Change the Ledger name as it appears in the UI.          |
+| [Exporting a Ledger](/help/manage-ledger#export-ledger)    | *Export*          | Export Ledger data to a JSON file.                       |
 
-#### Managing API Keys
+#### Managing Signer IDs
 
-The *API Keys* tab lists every API configured for the selected Ledger - its name, type (SDK, CI/CD, Postgres), and most recent usage date. You can have multiple API keys for the same Ledger. That way you can assign a unique key to each application when you have more than one accessing the same Ledger.
+The *Signer IDs* tab lists every API configured for the selected Ledger - its name, type (SDK, CI/CD, Postgres), and most recent usage date. You can have multiple Signer IDs for the same Ledger. That way you can assign a unique key to each application when you have more than one accessing the same Ledger.
 
 By clicking the **Actions** icon you can add new keys, get the value for existing keys, delete a key or show the Signer ID (for CI/CD keys).
 
 ---
 
-**Caution**: Deleting an API Key here will prevent any application currently using it from authenticating with the API.
+**Caution**: Deleting a Signer ID here will prevent any application currently using it from authenticating with the API.
 
 ---
 
-To create a new API key by clicking on "Create API Key" and providing an API Key name. *Only alphanumeric characters, plus dash and underscore ('-', '_') are valid.*
+To create a new Signer ID by clicking on "Create Signer ID" and providing a Signer ID. *Only alphanumeric characters, plus dash and underscore ('-', '_') are valid.*
 
-After creating your API key, you can copy it or download to a file on your local system.
+After creating your Signer ID, you can copy it or download to a file on your local system.
 
-<help-image src="/alt_apikey_gen.png" alt="" ></help-image>
+<help-image src="/alt_signer_id_recap.jpg" alt="Signer ID recap" ></help-image>
 
-To copy the API Key string to the clipboard, click the copy icon to the right of the key.
+To copy the Signer ID string to the clipboard, click the copy icon to the right of the key.
 
 Once a key is created, if you need to reset it, you can use the Rotate key function.
 
@@ -82,7 +82,7 @@ If you suspect a key is compromised, you can also use the "Revoke key" option to
 
 ---
 
-#### Automating API key management
+#### Automating Signer ID management
 
 You can automate management of keys by using the API and a Personal Token (link to personal tokens)
 
@@ -90,16 +90,16 @@ You can automate management of keys by using the API and a Personal Token (link 
 
 While the SDK allows you to query Ledger values based on a (lookup) key, the *Query Ledger* tab lets you query Ledger contents directly through the UI. The query process is is discussed in more detail on the [*Query Ledger Data page*](/help/query-ledger) .
 
-<help-image src="/alt_query_ldgr_wgt_annot.png" alt="" ></help-image>
+<help-image src="/alt_ledger_query_described.jpg" alt="Ledger query described" ></help-image>
 
 #### Audit Report
 
 Audit report lets you generate a PDF report containing the status of the current Ledger and
-CodeNotary Cloud Ledger instance.
+Codenotary Cloud Ledger instance.
 
 Report generation requires to select start and end time of interest for displaying the relevant reporting data.
 
-<help-image src="/alt_aud_rept_main.png" alt="" ></help-image>
+<help-image src="/alt_audit_report.jpg" alt="Audit report" ></help-image>
 
 ##### Running Audit Reports
 
@@ -115,30 +115,11 @@ For more about Audit reports and what they contain, see the [*Using Audit Report
 
 The *Ledger Settings* tab lets you rename an existing Ledger.
 
-<help-image src="/alt_ldgr_set_dlg.png" alt="" ></help-image>
+<help-image src="/alt_ledger_setting.jpg" alt="Ledger settings" ></help-image>
 
 Enter the new name in the text box then click the **Update Ledger** button.
 
 Note that this has no effect on SDK users. It merely changes the name of the Ledger as displayed in the UI.
 
-#### Export Ledger
-
-The Export Ledger function lets you download Ledger data as a JSON file.
-
-After clicking the *Export* tab from the Ledger Dashboard, a list view appears, showing previous exports for the current Ledger and the timeframe each represents.
-
-<help-image src="/alt_ldgr_export_main.png" alt="" ></help-image>
-
-##### Download an Existing Export
-
-<p class="inline-img">You can download any previously exported file again by clicking the download icon <help-image src="/alt_dnload_icn.png" alt=""></help-image> in the <i>Actions</i> column on the far right.</p>
-
-##### Create a New Export
-
-Click the **Export Ledger** button on the upper right to create a new download that includes all current data.
-
-A new entry is created at the top of the list. The *Status* column indicates when the file is ready for download. It will first display "running" as the system creates the file. When *Status* changes to "finished" the download icon appears.
-
-Note that larger files will take longer to create.
 
 <ui-prev-next class="mt-1" :prev="{ url: '/create-ledger', label: 'Creating a Ledger' }" :next="{ url: '/use-ledger', label: 'Using the SDK' }"></ui-prev-next>

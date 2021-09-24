@@ -14,15 +14,15 @@ The very first step in implementing a Ledger is to create it in the browser-base
 
 New Ledgers are created in the web UI from either the _Ledgers_ page or the _Home_ page by clicking the **+ Add Ledger** button.
 
-<help-image src="/alt_ledger_plain.png" alt="" ></help-image>
+<help-image src="/alt_ledger_list.jpg" alt="" ></help-image>
 
-Creating a Ledger takes just a few steps - name your Ledger, add optional tags, and generate an API key.
+Creating a Ledger takes just a few steps - name your Ledger, add optional tags, and generate a Signer ID.
 
 1. **Navigate to the *Ledger Page***  From the left-side navigation bar, select **Ledger** . The _Ledger_ page opens.
 
 2. Click the **+ Add Ledger** button. The *Define Ledger* panel opens.
 
-<help-image src="/alt_panell_defineledger.png" alt="" ></help-image>
+<help-image src="/alt_create_ledger_step1.jpg" alt="Create ledger step 1" ></help-image>
 
 3. **Enter a unique Ledger name** in the *Ledger name* field.
    Your Ledger name appears in tabular views.  It must be globally unique, and can contain only alphanumeric characters as well as dash and underscore ('-','_').  Note that you have the option to change the Ledger name at any time.
@@ -33,13 +33,13 @@ Creating a Ledger takes just a few steps - name your Ledger, add optional tags, 
 
    Labels are user-defined tags you can use to help categorize, group or otherwise track identifying aspects of the Ledger. The remain associated with the Ledger as metadata.
 
-   Click the **Next step** button when you're ready to continue. The *Define API key* panel opens.
+   Click the **Next step** button when you're ready to continue. The *Define Signer ID* panel opens.
 
    *Click the **Previous step** button to return to the Define Ledger* panel.
 
-   <help-image src="/alt_panel_definekey_sm.png" alt="" ></help-image>
+   <help-image src="/alt_create_ledger_step2.jpg" alt="Create ledger step 2" ></help-image>
 
-5. **Enter a unique name for the API Key** in the API Key name field. The key name must be globally unique, and can contain only alphanumeric characters as well as dash and underscore ('-','_').
+5. **Enter a unique name for the Signer ID** in the Signer ID field. The key name must be globally unique, and can contain only alphanumeric characters as well as dash and underscore ('-','_').
 
    The key name is simply an identifier that allows you to select it in other contexts.
 
@@ -49,11 +49,11 @@ Creating a Ledger takes just a few steps - name your Ledger, add optional tags, 
 
    ---
 
-   **NOTE**  If you have exceeded the total number of Ledgers allowed by your user license you will see an error when you click the **Next step** button on the *Define API Key* panel. (See [Errors Creating a Ledger](#/help/errors-creating-a-ledger) below.)
+   **NOTE**  If you have exceeded the total number of Ledgers allowed by your user license you will see an error when you click the **Next step** button on the *Define Signer ID* panel. (See [Errors Creating a Ledger](#/help/errors-creating-a-ledger) below.)
 
    ---
 
-   Click the **Previous step** button to return to the *Define API key* panel.
+   Click the **Previous step** button to return to the *Define Signer ID* panel.
 
 ## Errors Creating a Ledger
 
@@ -67,13 +67,13 @@ Most text fields in the UI will accept numbers and letters, as well as dash and 
 
 ##### Duplicate name
 
-All Ledger names and API key names must be unique across the entire system. Rename the Ledger if this happens.
+All Ledger names and Signer IDs must be unique across the entire system. Rename the Ledger if this happens.
 
 ##### License error
 
-<help-image src="/alt_err_lic.png" alt="" ></help-image>
+<help-image src="/alt_err_license.jpg" alt="Error license" ></help-image>
 
-CodeNotary offers a variety of licensing options.
+Codenotary offers a variety of licensing options.
 
 **License Options**
 

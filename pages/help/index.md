@@ -1,5 +1,5 @@
 ---
-title: Welcome to CodeNotary Cloud!
+title: Welcome to Codenotary Cloud!
 index: true
 ---
 
@@ -11,12 +11,12 @@ index: true
 #### Ledger Management
 
 - [Home - System Status](/help/overall-status)
-  _How to use the CNIL UI to understand the system-wide status of your Ledgers._
+  _How to use the Codenotary Cloud UI to understand the system-wide status of your Ledgers._
 
 - [Creating a Ledger](/help/create-ledger)
-  _How to create a Ledger in the web-based CNIL UI._
+  _How to create a Ledger in the web-based Codenotary Cloud UI._
 - [Managing a Ledger](/help/manage-ledger)
-  _How to manage existing Ledgers in the web-based CNIL UI._
+  _How to manage existing Ledgers in the web-based Codenotary Cloud UI._
 
 #### Ledger Transactions
 
@@ -44,5 +44,5 @@ For additional assistance with any topic, please don't hesitate to contact us by
 
 Copyright © 2021 CodeNotary, Inc. All rights reserved.
 
-<ui-logo className="help--logo logo-wrapper fill-width no-transation" size="normal"></-logo>
+<the-logo className="help--logo logo-wrapper fill-width no-transation" size="normal"></the-logo>
 

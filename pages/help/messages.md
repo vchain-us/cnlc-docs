@@ -2,7 +2,7 @@
 title: Messages and Notifications
 ---
 
-The CNIL platform reports critical system events and display them on the *Messages* page in tabular format. Users can see separate lists to distinguish active messages from those that have already been read and acknowledged.
+The Codenotary Cloud platform reports critical system events and display them on the *Messages* page in tabular format. Users can see separate lists to distinguish active messages from those that have already been read and acknowledged.
 
 ###### _Topics on this page..._
 
@@ -16,11 +16,11 @@ The CNIL platform reports critical system events and display them on the *Messag
 
 All new messages are displayed on the *Messages* page under the *Active messages* tab. When any new messages are waiting to be read, the UI alerts users in three different locations:
 
-1. <p class="inline-img"><strong>Alert Icon</strong><help-image src="/alt_bell_alert.png" alt=""><help-image/> The alert bell icon on the upper right of the status bar will display a flashing red dot above the bell.</p>
+1. <p class="inline-img"><strong>Alert Icon</strong><help-image src="/alt_bell_alert.jpg" alt=""><help-image/> The alert bell icon on the upper right of the status bar will display a flashing red dot above the bell.</p>
 
 2. **Home Page**  The messages panel on the [Home page](/help/overall-status) turns red and indicates the number of messages waiting.
 
-<help-image src="/alt_msg_notif.png" alt="" ></help-image>
+<help-image src="/alt_messages_info.jpg" alt="Messages" ></help-image>
 
 3. **[Ledger Management Page](/help/manage-ledger)**   For messages related to a particular Ledger, the messages panel on the management page for that Ledger red and indicates the number of messages waiting.
 
@@ -32,7 +32,7 @@ The *Messages* page consists of two tabs - *Active messages* and *Acknowledged m
 
 After a user acknowledges  a particular message, the system shifts it from the unread messages table and lists it under the Acknowledged messages tab.
 
-<help-image src="/alt_msg_main.png" alt="" ></help-image>
+<help-image src="/alt_messages_active.jpg" alt="Active messages" ></help-image>
 
 ##### Acknowledging a Message
 
