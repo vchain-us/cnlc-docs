@@ -30,7 +30,7 @@
 		"nuxt-fontawesome": "^0.4.0",
 		"nuxt-i18n": "^6.15.1",
 		"pretty-bytes": "^5.4.1",
-		"qs": "^6.9.4",
+		"qs": "^6.10.4",
 		"vue-toasted": "^1.1.28"
 	},
 	"devDependencies": {
