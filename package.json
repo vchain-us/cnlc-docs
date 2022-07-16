@@ -21,7 +21,7 @@
 		"@nuxt/content": "^1.9.0",
 		"@nuxt/core": "^2.14.10",
 		"@nuxtjs/auth": "^4.9.1",
-		"@nuxtjs/axios": "^5.12.2",
+		"@nuxtjs/axios": "^5.13.6",
 		"@trevoreyre/autocomplete-vue": "^2.2.0",
 		"axios": "^0.20.0",
 		"immutadot": "^1.0.0",
